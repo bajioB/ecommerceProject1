@@ -36,12 +36,26 @@ h6 {
 
 p {
     font-size: 16px;
-    color: #465b52;
+    color: #606060;
     margin: 15px 0 20px 0;
 }
 
+button.normal {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 16px 32px;
+    color:#FC4F4F;
+    background-color: #F7F7F7;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+
+}
 .section-p1 {
     padding: 40px 80px;
+
 }
 
 .section-m1 {
@@ -50,4 +64,426 @@ p {
 
 body {
     width: 100%;
+    background-color: #F7F7F7;
 }
+
+/* Header */
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #FC4F4F;
+    box-shadow: 0 5px15px rgba(0, 0, 0, 0.06); /* Underneath our navbar*/
+    z-index: 999;
+    position: sticky; /* makes the navbar/header to stick to the top when scrolling */
+    top: 0;  /* don't know what this is doing */
+    left: 0; /* don't know what this is doing */
+
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #180A0A;
+    transition: 0.5s ease; /* slowly transitions the color when we hover over the navbars*/
+
+}
+
+#navbar li a:hover , 
+#navbar li a.active  {
+    color: #F7F7F7;
+    box-shadow: 0 5px15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Home Page */
+
+#hero {
+    background-image: url("img/hero4.png");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+#hero h4 {
+    padding-bottom: 15px;
+}
+
+#hero h1 {
+    color: #FC4F4F ;
+}
+
+#hero button {
+    background-image: url("img/button.png");
+    background-color: transparent;
+    color: #FC4F4F;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+#feuture {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+#feuture .fe-box {
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.06);
+    border: 1.5px solid lightcoral;
+    border-radius: 5px;
+}
+
+#feuture .fe-box:hover {
+    box-shadow: 10px 10px 80px rgba(60, 56, 250, 0.03);
+}
+
+#feuture .fe-box h6 {
+    padding: 8px 5px 8px 5px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #FC4F4F;
+    background-color: white;
+}
+
+#feuture .fe-box:nth-child(2) h6 {
+    background-color: #222;
+}
+
+#feuture .fe-box:nth-child(4) h6 {
+    background-color: #222;
+}
+
+#feuture .fe-box:nth-child(6) h6 {
+    background-color: #222;
+}
+
+#feuture .fe-box img {
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+#product1 {
+    text-align: center;
+}
+
+#product1 .pro-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap; /* when the product line fills the screen it starts a new line */ 
+}
+
+#product1 .pro {
+    width: 23%;
+    min-width: 250px;
+    padding: 12px 12px;
+    border: 1.3px solid #2C3333;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.06);
+    margin: 10px 0;
+    transition: 0.5s ease;
+}
+
+#product1 .pro:hover {
+    box-shadow: 18px 18px 25px rgba(0, 0, 0, 0.1);
+}
+
+#product1 .pro img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#product1 .pro .des {
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .pro .des span {
+    color: #606060;
+    font-size: 14px;
+}
+
+#product1 .pro .des h5 {
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+
+#product1 .pro .des i {
+    font-size: 20px;
+    color: orange;
+}
+
+#product1 .pro .des h4 {
+    padding-top: 6px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #FC4F4F;
+}
+
+#product1 .pro .cart {
+    width: 45px;
+    font-size: 20px;
+    height: 45px;
+    line-height: 50px;
+    border-radius: 50px;
+    background-color: #DFDFDE; 
+    border: 1px solid #2C3333;
+   
+}
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url("img/banner/b2.jpg");
+    width: 100%;
+    height: 40vh;
+    background-position: center;
+
+}
+
+#banner h4 {
+    color: white;
+    font-size: 15px;
+
+}
+
+#banner h2 {
+    color: white;
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+#banner h2 span {
+    color: #FC4F4F;
+    font-size: 50px;
+}
+
+#banner button:hover {
+    background-color: red;
+    color: white;
+    transition: 0.3s;
+}
+
+#sm-banner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+#sm-banner .banner-box { /* the styling below is copied from the #banner styling and edited */ 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-image: url("img/banner/b17.jpg");
+    min-width: 620px;
+    height: 40vh;
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+    padding: 28px;
+    
+}
+
+#sm-banner h4 {
+    color: #F7F7F7;
+    font-size: 20px;
+    font-weight: 300;
+
+}
+
+#sm-banner h2 {
+    color: #FC4F4F;
+    font-size: 30px;
+    font-weight: 900;
+
+}
+
+#sm-banner span {
+    color: #F7F7F7;
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 18px;
+
+}
+
+button.white {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 12px 22px;
+    color:#FC4F4F;
+    background-color: #F7F7F7;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid black;
+    outline: none;
+    transition: 0.3s;
+
+}
+
+#sm-banner .banner-box:hover button {
+    background: #222;
+    border: 1px solid lightgrey;
+}
+
+#sm-banner .banner-box2 {
+    background-image: url("img/banner/b10.jpg") ;
+}
+
+#banner3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 70px;
+}
+
+#banner3 .banner-box { /* the styling below is copied from the #banner styling and edited */ 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-image: url("img/banner/b7.jpg");
+    min-width: 30%;
+    height: 30vh;
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+    padding: 25px;
+
+}
+
+#banner3 .banner-box { /* the styling below is copied from the #banner styling and edited */ 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-image: url("img/banner/b7.jpg");
+    min-width: 30%;
+    height: 30vh;
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+    padding: 25px;
+
+}
+
+#banner3 .banner-box2 {
+    background-image: url("img/banner/b4.jpg");
+
+}
+
+#banner3 .banner-box3 {
+    background-image: url("img/banner/b18.jpg");
+
+}
+
+#banner3 h2 {
+    color: white;
+    font-weight: 850;
+    font-size: 20px;
+
+}
+
+#banner3 h3 {
+    color: #DFDFDE;
+    font-weight: 800 ;
+    font-size: 14px;
+}
+
+#newsletter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("img/banner/b14.png");
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #1a1a1a;
+
+}
+
+#newsletter h4 {
+    font-size: 23px;
+    font-weight: 500;
+    color: #DFDFDE;
+}
+
+#newsletter p {
+    font-size: 16px;
+    font-weight: 200;
+    color: lightslategray;
+}
+
+#newsletter p span {
+    color: #FC4F4F;
+}
+
+#newsletter input {
+    height: 3.125rem;
+    padding: 0 1.5em;
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    outline: none;
+    border-bottom-left-radius: 0;
+    
+}
+
+#newsletter button {
+    background-color: #FC4F4F;
+    color: white;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+
+    
+}
+
+#newsletter button:hover {
+    background-color: red;
+    color: white;
+    transition: 0.3s;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/* footer */
+
+
+
