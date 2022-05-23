@@ -25,8 +25,19 @@ if (close) { // If any one clicks on close button it will remove the active stat
 }
 
 // This is for our close(X) button
-const cart = document.getElementById('cart');
-const mobile = document.getElementById('mobile');
 
 
 
+
+// Singleproduct.html 
+// now let's change the small images show as a big image onclick
+
+var mainimg = document.getElementById('mainimg');
+var smallimg = document.getElementsByClassName('small-img');
+
+for (let i = 0; i < smallimg.length; i++) {
+    smallimg[i].onclick = function () {
+        mainimg.src = smallimg[i].src;
+    
+    }
+}

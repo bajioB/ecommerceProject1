@@ -787,6 +787,24 @@ footer .copyright p {
         width: 100%;
         margin: 5% 15% 15% 15%;
     }
+
+
+    /* Ssingleproduct.html */
+    #prodetails {
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    #prodetails .single-pro-image {
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    #prodetails .single-pro-details {
+        width: 100%;
+
+    }
     
 }
 
@@ -847,6 +865,7 @@ footer .copyright p {
 #prodetails {
     display: flex;
     margin-top: 30px;
+    
 }
 
 #prodetails .single-pro-image {
@@ -873,6 +892,7 @@ footer .copyright p {
 
 #prodetails .single-pro-details h6 {
     font-size: 15px;
+    
 }
 
 #prodetails .single-pro-details select {
@@ -912,6 +932,3 @@ footer .copyright p {
     cursor: pointer;
 }
 
-#ddd {
-    width: 55%;
-}
