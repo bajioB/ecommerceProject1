@@ -127,7 +127,7 @@ body {
 
 #hero {
     background-image: url("img/hero4.png");
-    height: 90vh;
+    height: 70vh;
     width: 100%;
     background-size: cover;
     background-position: top 25% right 0;
@@ -451,14 +451,15 @@ button.white {
 
 }
 
+
 #newsletter h4 {
-    font-size: 23px;
+    font-size: 33px;
     font-weight: 500;
     color: #DFDFDE;
 }
 
 #newsletter p {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 200;
     color: lightslategray;
 }
@@ -568,6 +569,10 @@ footer .copyright p {
     color: #606060;
 
 }
+
+
+
+/* For tablet screen */
 
 @media (max-width: 799px) {
 
@@ -691,3 +696,222 @@ footer .copyright p {
 
 }
 
+/* For Iphone screen */
+
+@media (max-width: 477px) {
+    .section-p1 {
+        padding: 20px 40px;
+    }
+
+    #header {  
+        padding: 10px 25px;
+        
+    }
+
+    #hero {
+        
+        height: 60vh;
+        background-position: 60%;
+        padding: 0 25px;
+    }
+
+    h1 {
+        font-size: 36px;
+        
+    }
+
+    h2 {
+        font-size: 33px;
+       
+    }
+
+    #feuture .fe-box {
+        width: 120px;
+    }
+
+    #product1 .pro {
+        width: 100%;
+        border-radius: 50px;    
+    }
+
+    #banner {
+        
+        justify-content: center;
+        width: 100%;
+        height: 35vh;
+    }
+
+    #sm-banner .banner-box {
+        height: 35vh;
+    
+    }
+
+    #sm-banner h4 {
+        font-weight: 600;
+    }
+    #sm-banner span {
+        font-weight: 700;
+        text-shadow: 1.5px 2px #180A0A;
+        
+    }
+
+    #banner3 h2 {
+        display: none;
+    }
+
+    #banner3 h3 {
+        color: white;
+        font-weight: 700;
+        font-size: 12px;
+        text-shadow: 1.5px 2px #1a1a1a;
+    }
+
+    #banner3 .banner-box3 {
+        background-position: top 10% right 30%;
+    }
+
+    #newsletter {
+        padding: 25px 30px;
+    }
+
+    #newsletter input { 
+        width: 300px;
+        
+    }
+
+    footer {
+        justify-content: space-between;
+    }
+
+    footer .col-install {
+        width: 100%;
+        margin: 5% 15% 15% 15%;
+    }
+    
+}
+
+
+
+
+/* Shop Page */
+
+#page-header {
+    background-image: url(img/banner/b1.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 16px;
+
+}
+
+#page-header h2 {
+    color: #FC4F4F;
+}
+
+#page-header p {
+    color: #F7F7F7;
+}
+
+#pagination {
+    text-align: center;
+}
+
+#pagination a {
+    text-decoration: none;
+    background-color: black;
+    padding: 14px 18px;
+    border-radius: 4px;
+    color: #F7F7F7;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#pagination a:hover {
+    background-color: red;
+}
+
+#pagination a i {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+
+
+/*  Single Product page */
+
+#prodetails {
+    display: flex;
+    margin-top: 30px;
+}
+
+#prodetails .single-pro-image {
+    width: 40%;
+    margin-right: 40px;
+    cursor: pointer;
+
+}
+
+#prodetails .single-pro-details {
+    width: 50%;
+    padding-top: 40px;
+}
+
+#prodetails .single-pro-details h4 {
+    padding: 25px 0 25px 0;
+    color: red;
+    font-weight: lighter;
+}
+
+#prodetails .single-pro-details h2 {
+    font-size: 22px;
+}
+
+#prodetails .single-pro-details h6 {
+    font-size: 15px;
+}
+
+#prodetails .single-pro-details select {
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 8px;
+}
+
+#prodetails .single-pro-details input {
+    width: 48px;
+    height: 44px;
+    padding-left: 10px;
+    font-size: 18px;
+    margin-right: 12px;
+}
+
+#prodetails .single-pro-details button {
+    background-color: #2C3333;
+}
+
+#prodetails .single-pro-details button:hover {
+    color: #DFDFDE;
+}
+
+#prodetails .single-pro-details span {
+    line-height: 26px;
+}
+
+.small-img-group {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.small-img-col {
+    flex-basis: 23%;
+    cursor: pointer;
+}
+
+#ddd {
+    width: 55%;
+}
