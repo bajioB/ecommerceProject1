@@ -17,12 +17,12 @@
 
         <div>
             <ul id="navbar">
-                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li id="lg-bag"><a class="active" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
 
                 <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
             </ul>
@@ -38,6 +38,82 @@
     <section id="page-header">
         <h2>#stayhome</h2>
         <p>Save more with coupons & up to 60% off!</p>
+    </section>
+
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                    <td>Remove</td>
+                </tr>
+
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><img src="img/products/f1.jpg" alt=""></td>
+                    <td>Cartoon Astraunant T-shirt</td>
+                    <td>118.19</td>
+                    <td><input type="number" value="1"></td>
+                    <td>118.19</td>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                </tr>
+
+                <tr>
+                    <td><img src="img/products/f2.jpg" alt=""></td>
+                    <td>Cartoon Astraunant T-shirt</td>
+                    <td>110.19</td>
+                    <td><input type="number" value="1"></td>
+                    <td>110.19</td>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+
+                </tr>
+
+                <tr>
+                    <td><img src="img/products/f3.jpg" alt=""></td>
+                    <td>Cartoon Astraunant T-shirt</td>
+                    <td>128.19</td>
+                    <td><input type="number" value="1"></td>
+                    <td>128.19</td>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="cart-add">
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter your Coupon" name="coupon-name" id="">
+                <button class="normal">Apply</button>
+            </div>
+        </div>
+
+        <div id="subtotal">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>$335</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td class="totals">Total</td>
+                    <td>$335</td>
+                </tr>
+            </table>
+
+            <button class="normal">Proceed to Checkout</button>
+        </div>
     </section>
 
     <footer class="section-p1">
